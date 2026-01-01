@@ -1,0 +1,49 @@
+.barra-tecnologias {
+    clear: both; 
+    width: 100%;
+    margin-top: 30px; 
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(220, 33, 33, 0.3);
+}
+
+.carrusel-contenedor {
+    width: 100%; 
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3); 
+    padding: 20px 0;
+    border-radius: 10px; 
+    border: 1px solid #333; 
+    white-space: nowrap;
+    position: relative;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.carrusel-track {
+    display: inline-block;
+    animation: desplazamiento 15s linear infinite; 
+}
+
+.carrusel-slide {
+    display: inline-block;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 10px 20px; 
+    margin: 0 15px;      
+    background-color: #b71c1c;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+
+@keyframes desplazamiento {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}

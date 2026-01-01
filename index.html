@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bienvenido a mi blog</title>
+    <link rel = "stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="sobre_mi.html">Sobre mí</a>
+        <a href="contacto.html">Contáctame</a>
+    </nav>
+    <section class="section1">
+        <h1>Bienvenido a mi blog</h1>
+        <p>Este es un espacio donde comparto mis pensamientos y experiencias.</p>
+    </section>
+    <section class="section2">
+        <article>
+            <video id="video" autoplay loop muted>
+                <source src="Grabación de pantalla 2025-12-15 000156.mp4" type="video/mp4" alt="Cargando...">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+        <div id="frase" class="hidden"> </div>
+        </article>
+        <div class="cardi">
+            <h2>Un poco de mí...</h2>
+            <img id="Foto1" src="FOTOOOOOOOOO.png" width="250" height="250" alt="Cargando...">
+            <p>Soy un estudiante de ingeniería en tecnologías de la información y negocios digitales, apasionado por aprender y seguir mejorando para ser ese gran profesional con el que sueño cada día.</p>
+            <p> Si quieres saber más de mi, dale a: </p>
+
+            <button>
+               <a href="sobre_mi.html">Sobre mí</a>
+            </button>
+        </div>
+    </section>
+    <section class="section3">
+        <h1> MIS INTERESES DE SOFTWARE <style>h1 { color: white; display: grid; justify-content: center;}</style></h1>
+        <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="programing.jpeg" class="d-block w-100" alt="your browser does not support this image">
+      <div class="carousel-caption">  
+        <h5>PROGRAMACIÓN</h5>
+        <p>Apasionado al mundo del código, estamos en proceso de ser el mejor en el ICPC.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="LinuxTerminal.avif" class="d-block w-100" alt="your browser does not support this image">
+      <div class="carousel-caption">
+        <h5>SISTEMAS OPERATIVOS</h5>
+        <p>Me gusta saber como se comporta el "kernel" de las computadoras, parece magia!</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Networking.jpeg" class="d-block w-100" alt="your browser does not support this image">
+      <div class="carousel-caption">
+        <h5>CLOUD Y REDES</h5>
+        <p>Desconociendo todavia en estos temas, pero para allá vamos!</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<article>
+    <div class="card-group">
+  <div class="card">
+    <img src="Java.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">JAVA</h5>
+      <p class="card-text">Lenguaje de programación orientado a objetos.</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="C++.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">C++</h5>
+      <p class="card-text">Lenguaje de programación en la que compito.</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="JS.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">JavaScript</h5>
+      <p class="card-text">Lenguaje de programación utilizado para el desarrollo web.</p>
+      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</article>
+    </section>
+     <section class="seccion_final">
+      <h1> ¿Quieres saber más de mi?</h1>
+      <button id="boton_contacto">
+        <a href="contacto.html">¡CONTÁCTAME!</a>
+      </button>
+     </section>  
+    <footer>
+        <p>&copy; 2025 Mi Blog. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<script src="index.js"></script>
+</html>
