@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 p {
-    text-wrap: pretty;
+    text-wrap:pretty;
 }
 h1,h2,h3{
     text-wrap: balance;
@@ -88,7 +88,17 @@ body {
     margin-bottom: 10px;
     text-align: center;
 }
+.section2 p {
+    word-break: normal;     
+    overflow-wrap: break-word; 
 
+    text-wrap: pretty; 
+
+    hyphens: auto;      
+    text-align: center;  
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
 .section2 img {
     border-radius: 20%;
     box-shadow: 0 4px 15px rgba(255, 0, 0, 0.47);
@@ -115,8 +125,7 @@ article {
     color: #ffffff;
     text-align: left;
     animation: fadeIn 1s ease-in-out;
-    column-count: 2;
-    column-gap: 40px;
+    
 }
 
 #video {
@@ -427,7 +436,13 @@ footer a {
         height: 100%;
         object-fit: cover;
     }
-
+    .carousel-inner h5{
+        font-size: 1em;
+        text-decoration: overline;
+    }
+    .carousel-inner p {
+        font-size:0.6em;;
+    }
     .section3 h1 {
         text-align: center;
         background-image: url(LofiCoding.webp), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -458,7 +473,95 @@ footer a {
     }
 
 }
+@media screen and (max-width: 780px) {
 
+    nav {
+        flex-direction: row;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .section2, .seccion_final, .section1 {
+        padding: 20px 10px !important; 
+        width: 100%;
+        box-sizing: border-box; 
+    }
+
+    .section2 article {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #video {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .cardi {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .section2 img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cardi button {
+        height: 75px;
+    }
+    .carousel-item {
+        height: 300px;
+    }
+
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+    }
+    .carousel-inner h5{
+        font-size: 1em;
+        text-decoration: overline;
+    }
+    .carousel-inner p {
+        font-size:0.6em;;
+    }
+    .section3 h1 {
+        text-align: center;
+        background-image: url(LofiCoding.webp), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        background-position: top;
+    }
+    #sector {
+        width: 100%;
+        display: flex;
+        background-color: black;
+    }
+    .card-group {
+        margin:auto;
+        width: max-content;
+        display: flex;
+        flex: 1;
+        flex-direction: column !important;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .card img {
+        height: 250px;
+        object-fit: cover;
+        image-resolution: initial;
+    }
+
+}
 @media (min-width:1500px){
     .card-group {
         margin: auto;
@@ -492,6 +595,7 @@ footer a {
         background-color: black;
     }
 }
+
 @media (min-width:2100px){
     .card-group {
         display: flex;
