@@ -1,7 +1,12 @@
 html {
     scroll-behavior: smooth;
 }
-
+p {
+    text-wrap: pretty;
+}
+h1,h2,h3{
+    text-wrap: balance;
+}
 nav {
     color: inherit;
     display: flex;
@@ -362,9 +367,9 @@ footer a {
 @media screen and (max-width: 768px) {
 
     nav {
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
-        padding: 15px;
+        padding: 5px;
     }
 
     nav a {
@@ -373,11 +378,10 @@ footer a {
         box-sizing: border-box;
     }
 
-    .section2 {
-        flex-direction: column;
-        padding: 20px !important;
-        gap: 30px;
-        align-items: center;
+    .section2, .seccion_final, .section1 {
+        padding: 20px 10px !important; 
+        width: 100%;
+        box-sizing: border-box; 
     }
 
     .section2 article {
@@ -401,7 +405,9 @@ footer a {
         margin-left: auto;
         margin-right: auto;
     }
-
+    .cardi button {
+        height: 75px;
+    }
     .carousel-item {
         height: 300px;
     }
@@ -416,14 +422,22 @@ footer a {
         background-image: url(LofiCoding.webp), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
         background-position: top;
     }
-
-    .card-group {
+    #sector {
+        width: 100%;
         display: flex;
+        background-color: black;
+    }
+    .card-group {
+        margin:auto;
+        width: max-content;
+        display: flex;
+        flex: 1;
         flex-direction: column !important;
     }
 
     .card {
-        margin-bottom: 20px;
+        width: 100%;
+        margin: 0 0 20px 0;
     }
 
     .card img {
@@ -432,22 +446,69 @@ footer a {
         image-resolution: initial;
     }
 
-    .seccion_final {
-        padding: 60px 20px;
-    }
 }
 
-@media (min-width:2648px) {
-    #sector {
-        padding: 100px !important;
-    }
-
+@media (min-width:1500px){
     .card-group {
-        display: flexbox;
-        gap: 25%;
+        margin: auto;
+        display: flex;
+        flex-direction: row; 
+        width: 100%;             
+        background-color: black;
+    }
+    #sector {
+        width: 100%;
+        display: flex;
+        background-color: black;
     }
 
     .carousel-item {
         height: 1200px;
+    }
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+@media (min-width:1600px){
+    .card-group {
+        display: flex;
+        flex-direction: row; 
+        width: 100%;             
+        background-color: black;
+        gap:10%;
+    }
+    #sector {
+        width: 100%;
+        display: flex;
+        background-color: black;
+    }
+}
+@media (min-width:2100px){
+    .card-group {
+        display: flex;
+        flex-direction: row; 
+        width: 100%;             
+        background-color: black;
+        gap:20%;
+    }
+    #sector {
+        width: 100%;
+        display: flex;
+        background-color: black;
+    }
+}
+@media (min-width:2500px){
+    .card-group {
+        display: flex;
+        flex-direction: row; 
+        width: 100%;             
+        background-color: black;
+        gap:30%;
+    }
+    #sector {
+        width: 100%;
+        display: flex;
+        background-color: black;
     }
 }
