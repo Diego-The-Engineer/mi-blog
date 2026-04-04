@@ -107,6 +107,22 @@ aside{
     text-decoration:solid;
     text-align: justify;
 }
+/* Esto asegura que el portafolio baje y no choque con los paneles flotantes */
+.portafolio {
+    clear: both; /* La clave mágica */
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+}
+
+/* Un contenedor simple para que el botón no flote en la nada */
+.grid-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
 .btn-cv {
     display: block; 
     width: 100%;
@@ -137,36 +153,46 @@ aside{
     background: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
 }
-.btn btn-primary {
-    background-color: #e31b1b;
-    border-color: #e31b1b;   
+/* Estilo personalizado para el Modal */
+.mi-modal-dark {
+    background-color: rgb(15, 15, 15); /* Tu fondo negro habitual */
+    color: white;
+    border: 1px solid #e31b1b; /* Borde rojo elegante */
+    box-shadow: 0 0 20px rgba(227, 27, 27, 0.2); /* Resplandor rojo suave */
 }
-.btn btn-primary:hover {
-    background-color: #b71c1c;
-    border-color: #b71c1c;   
+
+.modal-header {
+    border-bottom: 1px solid #333; /* Línea separadora sutil */
 }
-.btn btn-primary:focus {
-    box-shadow: 0 0 0 0.2rem rgba(227, 27, 27, 0.5);
+
+.modal-footer {
+    border-top: 1px solid #333;
 }
-.btn btn-primary:active {
-    background-color: #8b1414;
-    border-color: #8b1414;   
+
+/* Estilo para el botón de "Ver más" si aún no lo tienes */
+.btn-ver-mas {
+    background: transparent;
+    color: #ccc;
+    border: 1px solid #555;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: all 0.3s;
 }
-.btn btn-primary:active:focus {
-    box-shadow: 0 0 0 0.2rem rgba(139, 20, 20, 0.5);
+
+.btn-ver-mas:hover {
+    background: #e31b1b;
+    color: white;
+    border-color: #e31b1b;
 }
-#exampleModal .modal-header {
+
+/* Botón rojo personalizado dentro del modal */
+.btn-rojo {
     background-color: #e31b1b;
     color: white;
-    border-bottom: none;
-}
-.modal-dialog {
-    max-width: 600px;
-    margin: 30px auto;
-}
-.modal fade .modal-content {
-    background-color: #1a1a1a;
-    color: white;
-    border-radius: 10px;
     border: none;
+}
+
+.btn-rojo:hover {
+    background-color: #ff0000;
+    color: white;
 }

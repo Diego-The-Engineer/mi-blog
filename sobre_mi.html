@@ -1,170 +1,202 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mi - Mi blog</title>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre mi - Mi blog</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="sobre_mi.css" rel="stylesheet">
+        <link href="Carrusel.css" rel="stylesheet">
+        <script src="carrusel.js" defer></script>
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="sobre_mi.html">Sobre mí</a>
+            <a href="contacto.html">Contáctame</a>
+        </nav>
+        <aside class="izquierda">
+            <article class="presentacion1">
+                <h1>Diego Aimar Gómez de la Rosa</h1>
+                <img src="yoo.jpg" width="250" height="250" alt="Cargando...">
+                <p>Soy un apasionado estudiante de ingeniería en software con el objetivo de convertirme en un ingeniero de software profesional y competente. Mi dedicación al aprendizaje continuo y la práctica constante me permite dominar diversos lenguajes de programación y tecnologías modernas. Estoy comprometido con desarrollar soluciones innovadoras que resuelvan problemas reales y generen impacto positivo. A través de proyectos desafiantes y participación en competencias, fortalezco mis habilidades técnicas y de trabajo en equipo. Creo que la ingeniería de software es clave para transformar el mundo digital. Mi visión es ser un profesional integral que combine conocimiento técnico con pensamiento creativo. Espero que en el futuro pueda contribuir significativamente al avance tecnológico de la industria.</p>
+                </p>
+            </article>
 
-    <link href="sobre_mi.css" rel="stylesheet">
-    <link href="Carrusel.css" rel="stylesheet">
-    <script src="carrusel.js" defer></script>
-</head>
-<body>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="sobre_mi.html">Sobre mí</a>
-        <a href="contacto.html">Contáctame</a>
-     </nav>
-    <aside class="izquierda">
-        <article class="presentacion1">
-            <h1>Diego Aimar Gómez de la Rosa</h1>
-            <img src="yoo.jpg" width="250" height="250" alt="Cargando...">
-            <p>Soy un apasionado estudiante de ingeniería en software con el objetivo de convertirme en un ingeniero de software profesional y competente. Mi dedicación al aprendizaje continuo y la práctica constante me permite dominar diversos lenguajes de programación y tecnologías modernas. Estoy comprometido con desarrollar soluciones innovadoras que resuelvan problemas reales y generen impacto positivo. A través de proyectos desafiantes y participación en competencias, fortalezco mis habilidades técnicas y de trabajo en equipo. Creo que la ingeniería de software es clave para transformar el mundo digital. Mi visión es ser un profesional integral que combine conocimiento técnico con pensamiento creativo. Espero que en el futuro pueda contribuir significativamente al avance tecnológico de la industria.</p>
-            </p>
-        </article>
-
-    </aside>
-    <aside class="derecha">
-        <div class="text">
-            <h2>Mi Información de Contacto</h2>
-            <p>Email: diego.gomez01@anahuac.mx </p>
-            <p>Teléfono: +52 951 408 7678</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/diego-aimar-g%C3%B3mez-de-la-rosa-4559ba335/" target="_blank"> Diego Aimar Gómez de la Rosa</a></p>
-            <p>GitHub: <a href="https://github.com/Diego-The-Engineer" target="_blank">Diego_the_engineer</a></p>
-        </div>
-        <div class="text">
-            <h2>¡Checa mi currículum!</h2>
-            <a href="CV____Diego_Aimar_Gómez_de_la_Rosa (1).pdf" download="CV_Diego_Gomez.pdf" class="btn-cv">
-        📄 Descargar CV
-    </a>
-        </div>
-        <div>
-            <button id="boton" onclick="cerrarSesion()">Cerrar Sesión</button>
-        </div>
-    </aside>
-    </aside> <section class="barra-tecnologias">
-        <h2 style="text-align: center; color: white;">Mis Herramientas</h2>
-        
-        <div class="carrusel-contenedor">
-            <div class="carrusel-track">
-                <div class="carrusel-slide">
-                    <span class="skill-tag">☕ Java</span>
-                    <span class="skill-tag">🐍 Python</span>
-                    <span class="skill-tag">©️ C++</span>
-                    <span class="skill-tag">💛 JavaScript</span>
-                    <span class="skill-tag">⚛️ React</span>
-                    <span class="skill-tag">🎨 CSS</span>
-                    <span class="skill-tag">🐧 Linux</span>
-                    <span class="skill-tag">💾 SQL</span>
-                    <span class="skill-tag">🐙 Git</span>
-                </div>
-                
-                <div class="carrusel-slide">
-                    <span class="skill-tag">☕ Java</span>
-                    <span class="skill-tag">🐍 Python</span>
-                    <span class="skill-tag">©️ C++</span>
-                    <span class="skill-tag">💛 JavaScript</span>
-                    <span class="skill-tag">⚛️ React</span>
-                    <span class="skill-tag">🎨 CSS</span>
-                    <span class="skill-tag">🐧 Linux</span>
-                    <span class="skill-tag">💾 SQL</span>
-                    <span class="skill-tag">🐙 Git</span>
+        </aside>
+        <aside class="derecha">
+            <div class="text">
+                <h2>Mi Información de Contacto</h2>
+                <p>Email: diego.gomez01@anahuac.mx </p>
+                <p>Teléfono: +52 951 408 7678</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/diego-aimar-g%C3%B3mez-de-la-rosa-4559ba335/" target="_blank"> Diego Aimar Gómez de la Rosa</a></p>
+                <p>GitHub: <a href="https://github.com/Diego-The-Engineer" target="_blank">Diego_the_engineer</a></p>
+            </div>
+            <div class="text">
+                <h2>¡Checa mi currículum!</h2>
+                <a href="CV____Diego_Aimar_Gómez_de_la_Rosa (1).pdf" download="CV_Diego_Gomez.pdf" class="btn-cv">
+            📄 Descargar CV
+        </a>
+            </div>
+            <div>
+                <button id="boton" onclick="cerrarSesion()">Cerrar Sesión</button>
+            </div>
+        </aside>
+        </aside> <section class="barra-tecnologias">
+            <h2 style="text-align: center; color: white;">Mis Herramientas</h2>
+            
+            <div class="carrusel-contenedor">
+                <div class="carrusel-track">
+                    <div class="carrusel-slide">
+                        <span class="skill-tag">☕ Java</span>
+                        <span class="skill-tag">🐍 Python</span>
+                        <span class="skill-tag">©️ C++</span>
+                        <span class="skill-tag">💛 JavaScript</span>
+                        <span class="skill-tag">⚛️ React</span>
+                        <span class="skill-tag">🎨 CSS</span>
+                        <span class="skill-tag">🐧 Linux</span>
+                        <span class="skill-tag">💾 SQL</span>
+                        <span class="skill-tag">🐙 Git</span>
+                    </div>
+                    
+                    <div class="carrusel-slide">
+                        <span class="skill-tag">☕ Java</span>
+                        <span class="skill-tag">🐍 Python</span>
+                        <span class="skill-tag">©️ C++</span>
+                        <span class="skill-tag">💛 JavaScript</span>
+                        <span class="skill-tag">⚛️ React</span>
+                        <span class="skill-tag">🎨 CSS</span>
+                        <span class="skill-tag">🐧 Linux</span>
+                        <span class="skill-tag">💾 SQL</span>
+                        <span class="skill-tag">🐙 Git</span>
+                    </div>
                 </div>
             </div>
+        </section>
+        <script>
+        const usuario = localStorage.getItem('usuarioLogueado');
+        const boton = document.getElementById('boton');
+        if (!usuario) {
+            window.location.href = "login.html";
+        } 
+        if(boton.addEventListener('click', cerrarSesion)){
+            console.log("Cerrando sesión");
+        }
+        function cerrarSesion() {
+            localStorage.removeItem('usuarioLogueado');
+            window.location.href = "login.html";
+        }
+    </script>
+    <section class="Descripcion">
+        <p>
+        <strong style="color: #e31b1b; font-size: 1.1em;">💻 Dev by day, Problem Solver always.</strong>
+        <br><br>
+        Soy un ingeniero en formación apasionado por construir software robusto y escalable. No solo escribo código; <strong>diseño soluciones eficientes</strong>. 
+        Combino mi educación académica con una mentalidad autodidacta para dominar lo que ocurre "detrás de cámaras" en el software.
+    </p>
+
+    <p>
+        <strong>En qué me destaco:</strong>
+        <ul style="list-style: none; padding-left: 0; margin-top: 5px;">
+            <li>🚀 Lógica sólida (Java/Python) y Backend.</li>
+            <li>💾 Gestión de Bases de Datos y Servidores.</li>
+            <li>⚡ Desarrollo de sistemas de alto rendimiento.</li>
+        </ul>
+    </p>
+
+    <p style="margin-top: 15px; font-style: italic; color: #ccc;">
+        "Siempre compilando nuevas ideas y buscando el siguiente desafío para subir de nivel."
+    </p>
+    <div class="cartas">
+        <div class="cardi">
+            <img src="ICPC.png" width="250px" height="250px" alt="ICPC">
+            <h3>Competencias de Programación</h3>
+            <p>Participante activo en concursos de programación competitiva como ICPC, mejorando mis habilidades algorítmicas y de resolución de problemas.</p>
         </div>
+        <div class="cardi">
+            <img src="proyectos.jpeg" width="250px" height="250px" alt="Proyectos">
+            <h3>Proyectos Personales</h3>
+            <p>Desarrollo de proyectos personales que abarcan desde aplicaciones web hasta herramientas de automatización, aplicando buenas prácticas de desarrollo.</p>
+        </div>
+        <div class="cardi">
+            <img src="colaboracion.jpg" width="250px" height="250px" alt="Colaboración">
+            <h3>Colaboración en Equipo</h3>
+            <p>Experiencia trabajando en equipos multidisciplinarios, utilizando metodologías ágiles para entregar soluciones efectivas y a tiempo.</p>
+        </div>
+    </div>
     </section>
     <script>
-    const usuario = localStorage.getItem('usuarioLogueado');
-    const boton = document.getElementById('boton');
-    if (!usuario) {
-        window.location.href = "login.html";
-    } 
-    if(boton.addEventListener('click', cerrarSesion)){
-        console.log("Cerrando sesión");
-    }
-    function cerrarSesion() {
-        localStorage.removeItem('usuarioLogueado');
-        window.location.href = "login.html";
-    }
-</script>
-<section class="Descripcion">
-    <p>
-    <strong style="color: #e31b1b; font-size: 1.1em;">💻 Dev by day, Problem Solver always.</strong>
-    <br><br>
-    Soy un ingeniero en formación apasionado por construir software robusto y escalable. No solo escribo código; <strong>diseño soluciones eficientes</strong>. 
-    Combino mi educación académica con una mentalidad autodidacta para dominar lo que ocurre "detrás de cámaras" en el software.
-</p>
+        const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
 
-<p>
-    <strong>En qué me destaco:</strong>
-    <ul style="list-style: none; padding-left: 0; margin-top: 5px;">
-        <li>🚀 Lógica sólida (Java/Python) y Backend.</li>
-        <li>💾 Gestión de Bases de Datos y Servidores.</li>
-        <li>⚡ Desarrollo de sistemas de alto rendimiento.</li>
-    </ul>
-</p>
-
-<p style="margin-top: 15px; font-style: italic; color: #ccc;">
-    "Siempre compilando nuevas ideas y buscando el siguiente desafío para subir de nivel."
-</p>
-<div class="cartas">
-    <div class="cardi">
-        <img src="ICPC.png" width="250px" height="250px" alt="ICPC">
-        <h3>Competencias de Programación</h3>
-        <p>Participante activo en concursos de programación competitiva como ICPC, mejorando mis habilidades algorítmicas y de resolución de problemas.</p>
-    </div>
-    <div class="cardi">
-        <img src="proyectos.jpeg" width="250px" height="250px" alt="Proyectos">
-        <h3>Proyectos Personales</h3>
-        <p>Desarrollo de proyectos personales que abarcan desde aplicaciones web hasta herramientas de automatización, aplicando buenas prácticas de desarrollo.</p>
-    </div>
-    <div class="cardi">
-        <img src="colaboracion.jpg" width="250px" height="250px" alt="Colaboración">
-        <h3>Colaboración en Equipo</h3>
-        <p>Experiencia trabajando en equipos multidisciplinarios, utilizando metodologías ágiles para entregar soluciones efectivas y a tiempo.</p>
-    </div>
-</div>
-</section>
-<script>
-    const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
-
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
-})
-</script>
-<section class="portafolio">
-    <h1> MI PORTAFOLIO DE PROYECTOS </h1>
+    myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+    })
+    </script>
+    <section class="portafolio">
+    <h1 style="text-align: center; color: white;"> MI PORTAFOLIO DE PROYECTOS </h1>
+    
     <div class="grid-container">
-        <div class="grid-item">
-            <img src="Proyecto1.png" alt="Proyecto 1">
-            <h3>Sistema de Gestión de Inventarios</h3>
-            <p>Desarrollé un sistema completo para gestionar inventarios en una pequeña empresa, utilizando Java y MySQL.</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver más...</button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                </div>
-            </div>
-            </div>
+        <div class="cardi" style="max-width: 300px;">
+            <img src="Proyecto1.jpg" style="width:100%; border-radius: 8px;" alt="Proyecto Inventario">
+            <h3>Sistema de Gestión</h3>
+            <p>Sistema Java y MySQL para control de stock.</p>
+            
+            <button type="button" class="btn-ver-mas" data-bs-toggle="modal" data-bs-target="#modalProyecto1">
+                Ver más...
+            </button>
         </div>
-        <div class="grid-item">
-            <img src="Proyecto2.png" alt="Proyecto 2">
-            <h3>Aplicación Web de Tareas</h3>
-            <p>Creé una aplicación web para la gestión de tareas diarias, implementando React para el frontend y Node.js para el backend.</p>
+        <div class="cardi" style="max-width: 300px;">
+            <img src="Proyecto1.jpg" style="width:100%; border-radius: 8px;" alt="Proyecto Inventario">
+            <h3>Sistema de Gestión</h3>
+            <p>Sistema Java y MySQL para control de stock.</p>
+            
+            <button type="button" class="btn-ver-mas" data-bs-toggle="modal" data-bs-target="#modalProyecto1">
+                Ver más...
+            </button>
         </div>
-        <div class="grid-item">
-            <img src="Proyecto3.png" alt="Proyecto 3">
-            <h3>Automatización de Reportes</h3>
-            <p>Desarrollé un script en Python que automatiza la generación de reportes semanales a partir de datos en Excel.</p>
+        <div class="cardi" style="max-width: 300px;">
+            <img src="Proyecto1.jpg" style="width:100%; border-radius: 8px;" alt="Proyecto Inventario">
+            <h3>Sistema de Gestión</h3>
+            <p>Sistema Java y MySQL para control de stock.</p>
+            
+            <button type="button" class="btn-ver-mas" data-bs-toggle="modal" data-bs-target="#modalProyecto1">
+                Ver más...
+            </button>
         </div>
+    </div>
 </section>
-</body>
-</html>
+    <div class="modal fade" id="modalProyecto1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg"> <div class="modal-content mi-modal-dark">
+        
+        <div class="modal-header">
+            <h5 class="modal-title">Sistema de Gestión de Inventarios</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="modal-body">
+            <img src="Proyecto1.jpg" class="img-fluid rounded mb-3" alt="Vista previa del proyecto">
+            <p>
+            Este sistema fue desarrollado para solucionar problemas de stock en pequeñas empresas.
+            Permite registrar entradas, salidas y generar reportes en PDF.
+            </p>
+            <ul>
+                <li><strong>Tecnologías:</strong> Java, MySQL, iText PDF.</li>
+                <li><strong>Rol:</strong> Backend Developer.</li>
+                <li><strong>Reto principal:</strong> Optimizar las consultas SQL para inventarios grandes.</li>
+            </ul>
+        </div>
+        
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <a href="https://github.com/tu-usuario/proyecto-inventario" target="_blank" class="btn btn-rojo">
+                Ver código en GitHub
+            </a>
+        </div>
+
+        </div>
+    </div>
+    </div>
+    </body>
+    </html>
