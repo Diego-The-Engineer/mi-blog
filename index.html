@@ -15,11 +15,11 @@
         <a href="sobre_mi.html">Sobre mí</a>
         <a href="contacto.html">Contáctame</a>
     </nav>
-    <section class="section1">
+    <section class="section1 reveal">
         <h1>Bienvenido a mi blog</h1>
         <p>Este es un espacio donde comparto mis pensamientos y experiencias.</p>
     </section>
-    <section class="section2">
+    <section class="section2 reveal">
         <article>
             <video id="video" autoplay loop muted>
                 <source src="Grabación de pantalla 2025-12-15 000156.mp4" type="video/mp4" alt="Cargando...">
@@ -38,7 +38,7 @@
             </button>
         </div>
     </section>
-    <section class="section3">
+    <section class="section3 reveal">
         <h1> MIS INTERESES DE SOFTWARE <style>h1 { color: white; display: grid; justify-content: center;}</style></h1>
         <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
@@ -78,8 +78,8 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-<article id="sector">
-    <div class="card-group">
+<article id="sector reveal">
+    <div class="card-group reveal">
   <div class="card">
     <img src="JAVA.png" class="card-img-top" alt="...">
     <div class="card-body">
@@ -88,7 +88,7 @@
       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  <div class="card">
+  <div class="card reveal">
     <img src="C++.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">C++</h5>
@@ -96,7 +96,7 @@
       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  <div class="card">
+  <div class="card reveal">
     <img src="JS.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">JavaScript</h5>
@@ -107,7 +107,7 @@
 </div>
 </article>
     </section>
-     <section class="seccion_final">
+     <section class="seccion_final reveal">
       <h1> ¿Quieres saber más de mi?</h1>
       <button id="boton_contacto">
         <a href="contacto.html">¡CONTÁCTAME!</a>
@@ -116,6 +116,22 @@
     <footer>
         <p>&copy; 2025 Mi Blog. Todos los derechos reservados.</p>
     </footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('activo');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1 
+        });
+        const hiddenElements = document.querySelectorAll('.reveal');
+        hiddenElements.forEach((el) => observer.observe(el));
+        });
+</script>
 </body>
 <script src="index.js"></script>
 </html>

@@ -49,7 +49,16 @@ body {
     line-height: 1.6;
     color: black;
 }
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
 
+.reveal.activo {
+    opacity: 1;
+    transform: translateY(0);
+}
 .section1 {
     margin-bottom: 20px;
     padding: 10px;
